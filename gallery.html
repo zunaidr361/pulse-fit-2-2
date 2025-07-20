@@ -2,43 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Image Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Iron Pulse Gym</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Photo Collection</h1>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Iron Pulse Gym Logo" class="logo"/>
+      <h1>Iron Pulse Gym</h1>
+    </div>
     <nav>
-      <ul class="nav-list">
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html" class="current">Gallery</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="gallery-container">
-    <div class="gallery-item">
-      <img src="images/renovation1.jpg" alt="Cozy living room makeover" />
-      <p>Cozy living room makeover with renter-friendly decor.</p>
+  <main>
+    <h2>Our Gym in Action</h2>
+    <p class="intro-text">Take a peek inside our facility and see how we help members level up their training.</p>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/gallery1.jpg" alt="Weight Room">
+        <p>Fully equipped weight training zone</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery2.jpg" alt="Group Class">
+        <p>Dynamic group fitness sessions</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery3.jpg" alt="Personal Trainer">
+        <p>Expert personal training guidance</p>
+      </div>
     </div>
-    <div class="gallery-item">
-      <img src="images/kitchen_update.jpg" alt="Kitchen backsplash ideas" />
-      <p>Simple kitchen backsplash update using peel-and-stick tiles.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/bathroom_shelf.jpg" alt="Bathroom shelving solution" />
-      <p>Easy bathroom shelving for extra storage without drilling walls.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/walls_floors.jpg" alt="Peel-and-stick wallpaper" />
-      <p>Peel-and-stick wallpaper adding color and style to walls.</p>
-    </div>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2025 MySite. Contact: <a href="mailto:zunaidr361@gmail.com">zunaidr361@gmail.com</a></p>
+    <p>&copy; 2025 Iron Pulse Gym | All rights reserved.</p>
   </footer>
 </body>
 </html>

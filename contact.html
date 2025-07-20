@@ -2,56 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Iron Pulse Gym</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Get in Touch</h1>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Iron Pulse Gym Logo" class="logo"/>
+      <h1>Iron Pulse Gym</h1>
+    </div>
     <nav>
-      <ul class="nav-list">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="current">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="form-section">
-    <h2>Contact Form</h2>
-    <form action="#" method="post" novalidate>
+  <main>
+    <h2>Contact Us</h2>
+    <p>Have questions or want to join? Fill out the form below and we'll get back to you!</p>
+
+    <form>
       <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+      <input type="text" id="fullname" name="fullname" placeholder="Your full name">
 
-      <label for="emailaddr">Email Address:</label>
-      <input type="email" id="emailaddr" name="emailaddr" placeholder="you@example.com" required />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
 
-      <label for="topic">Reason for Contact:</label>
-      <select id="topic" name="topic" required>
-        <option value="" disabled selected>Select a topic</option>
-        <option value="support">Support</option>
-        <option value="feedback">Feedback</option>
-        <option value="other">Other</option>
+      <label for="goals">Fitness Goals:</label>
+      <select id="goals" name="goals">
+        <option value="gain-muscle">Gain Muscle</option>
+        <option value="lose-weight">Lose Weight</option>
+        <option value="general-fitness">General Fitness</option>
+        <option value="sports-performance">Sports Performance</option>
       </select>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      <label for="membership">Membership Type:</label>
+      <input type="text" id="membership" name="membership" placeholder="Monthly, Yearly, etc.">
 
-      <label>
-        <input type="checkbox" name="subscribe" />
-        Subscribe to newsletter
-      </label>
+      <label for="message">Additional Comments:</label>
+      <textarea id="message" name="message" placeholder="Tell us more about your fitness needs..."></textarea>
 
-      <div class="form-buttons">
-        <button type="submit">Send</button>
-        <button type="reset">Clear</button>
+      <div style="display: flex; gap: 15px;">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </div>
     </form>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2025 MySite. Contact: <a href="mailto:zunaidr361@gmail.com">zunaidr361@gmail.com</a></p>
+    <p>&copy; 2025 Iron Pulse Gym | All rights reserved.</p>
   </footer>
 </body>
 </html>
