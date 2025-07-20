@@ -1,100 +1,137 @@
-/* Color Scheme */
-:root {
-  --dark-blue: #102542;
-  --light-blue: #9fc3d9;
-  --accent: #e75a7c;
-  --bg: #f5f5f5;
-  --text: #222;
-}
-
-body {
-  margin: 0;
-  font-family: 'Verdana', sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-}
-
-/* Header */
-.site-header {
-  background-color: var(--dark-blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  flex-wrap: wrap;
-  gap: 15px;
-  text-align: center;
-}
-
-.site-header h1 {
-  color: white;
-  margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: 1px;
-}
-
-.logo {
-  width: 80px;
-  height: auto;
-}
-
-/* Navigation */
-.main-nav {
-  background-color: var(--accent);
-  text-align: center;
-}
-
-.main-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-.main-nav a {
-  display: block;
-  padding: 15px 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.main-nav a:hover {
-  background-color: var(--dark-blue);
-}
-
-/* Flex Layout */
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: wrap;
-}
-
-.left-panel, .right-panel {
-  flex: 1 1 45%;
-  background-color: white;
-  padding: 25px;
+s to your existing style.css
+css
+Copy
+Edit
+/* Contact Form Styling */
+.form-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 6px #ccc;
 }
 
-.left-panel h2, .right-panel h2 {
-  color: var(--accent);
+.form-section h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #222;
 }
 
-/* Footer */
-.site-footer {
-  background-color: var(--dark-blue);
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.1);
+  vertical-align: middle;
+}
+
+.form-buttons {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background-color: #5a8dee;
   color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b6fd1;
+}
+
+/* Gallery Styling */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ddd;
+  overflow: hidden;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding-bottom: 1rem;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+}
+
+.gallery-item p {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Navigation adjustments */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  background-color: #ebf0ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #5a8dee;
+  border: 1.5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #5a8dee;
+  color: white;
+  border-color: #3b6fd1;
+}
+
+.nav-list li a.current {
+  background-color: #3b6fd1;
+  color: white;
+  pointer-events: none;
+  border-color: #2a4bbd;
 }
